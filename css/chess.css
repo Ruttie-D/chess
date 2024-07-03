@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+}
+
+.game-board {
+    margin: 0 auto;
+    width: 48vw;
+    height: 48vw;
+    /* background-color: black; */
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.square {
+    width: 6vw;
+    height: 6vw;
+    position: relative;
+}
+
+.square svg {
+    width: 5vw;
+    height: 5vw;
+    margin: 0.5vw;
+    position: relative;
+    z-index: -7;
+}
+
+path {
+    position: relative;
+    z-index: -8;
+}
+
+.piece {
+    position: relative;
+    z-index: 4;
+}
+
+.light {
+    background-color: #ffdab0;
+}
+
+.dark {
+    background-color: #5a0a30;
+}
+
+.white {
+    fill: white;
+}
+
+.black {
+    fill: black;
+}
+
+@media(max-width:768px) {
+    .game-board {
+        width: 44vh;
+        height: 44vh;
+    }
+
+    .square {
+        width: 5.5vh;
+        height: 5.5vh;
+    }
+
+    .square svg {
+        width: 4.5vh;
+        height: 4.5vh;
+        margin: 0.5vh;
+    }
+}
