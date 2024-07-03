@@ -23,7 +23,6 @@ function dragDrop(e) {
     const opponent = playerGo === 'white' ? 'black' : 'white';
     const takenByOpponent = e.target.firstChild?.classList.contains(opponent);
     const valid = checkIfValid(e.target, takenByOpponent);
-    console.log(takenByOpponent);
 
     if (correctGo) {
 
