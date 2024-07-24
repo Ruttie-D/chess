@@ -36,7 +36,7 @@ function createBoard() {
         }
 
         // white pieces
-        if (i < 15) {
+        if (i <= 15) {
             square.firstChild?.firstChild.classList.add('black');
         }
 

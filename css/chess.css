@@ -61,6 +61,14 @@ path {
     fill: black;
 }
 
+.highlight-red {
+    border: red 1px solid;
+}
+
+.highlight-blue {
+    border: blue 1px solid;
+}
+
 @media(max-width:768px) {
     .game-board {
         width: 44vh;
